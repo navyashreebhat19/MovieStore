@@ -7,6 +7,8 @@ Key feature :
 2. GridView
 3. Favourite  stored using RoomDB.
 
+Note : This app is been populated with dummy data.
+
 
 The project has modules -Model, respository, view and activities
 
