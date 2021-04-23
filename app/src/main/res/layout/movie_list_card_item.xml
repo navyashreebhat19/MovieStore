@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="4"
-        android:background="@color/yellowgradiant"
+        android:background="@color/colorPrimary"
         >
         <ImageView
             android:id="@+id/movie_image"
@@ -32,7 +32,7 @@
             android:fontFamily="monospace"
             android:textStyle="bold"
             tools:text="Movie Title"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             />
         <TextView
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:alpha="0.7"
             android:fontFamily="monospace"
             android:textStyle="bold"
@@ -56,7 +56,7 @@
             android:fontFamily="monospace"
             android:textStyle="bold"
             android:alpha="0.7"
-            android:textColor="#000"
+            android:textColor="#fff"
             tools:text="doijajdjaojdojds joaiosadojdojodaij oadoijdoijsaoijd aoijaisij daoado iodsaij oia doai jdsoai daoisj doaidsj aoisjd aoidj oaidj aoidsj oaid "
             app:layout_constraintStart_toEndOf="@+id/movie_image"
             app:layout_constraintEnd_toEndOf="parent"

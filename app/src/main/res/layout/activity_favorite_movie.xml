@@ -7,7 +7,7 @@
         android:id="@+id/flat_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:background="@color/yellowgradiant">
 
         <ImageButton
             android:id="@+id/back_button"
@@ -16,7 +16,8 @@
             android:layout_gravity="center_vertical"
             android:background="@color/transparent"
             android:padding="16dp"
-            android:src="@drawable/background_button_back" />
+            android:src="@drawable/background_button_back"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
         <TextView
             android:id="@+id/toolbar_title"
@@ -38,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/flat_header"
+        android:background="@color/colorPrimary"
         />
 
     <RelativeLayout

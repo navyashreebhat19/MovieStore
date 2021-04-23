@@ -7,13 +7,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/yellowgradiant">
+        android:background="@color/colorPrimary">
 
         <RelativeLayout
             android:id="@+id/flat_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@color/yellowgradiant"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -39,20 +39,10 @@
                 android:ellipsize="end"
                 android:layout_toEndOf="@+id/back_button"
                 android:textColor="@color/white"
-                android:layout_toStartOf="@id/comment_button"
+
                 android:textSize="20dp" />
 
-            <ImageButton
-                android:id="@+id/comment_button"
-                android:layout_alignParentEnd="true"
-                android:layout_centerInParent="true"
-                android:src="@android:drawable/sym_action_chat"
-                android:layout_marginEnd="10dp"
-                android:background="@color/transparent"
-                android:scaleType="centerCrop"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:visibility="gone"/>
+
 
         </RelativeLayout>
 
@@ -99,7 +89,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -110,8 +100,8 @@
             android:id="@+id/movie_release_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#757575"
             android:textSize="12sp"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/movie_title"
             app:layout_constraintTop_toBottomOf="@+id/movie_title" />
 
@@ -126,9 +116,8 @@
             android:id="@+id/movie_overview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/movie_poster_title_barrier" />
@@ -139,6 +128,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/movie_poster_card"
             app:layout_constraintStart_toStartOf="@+id/movie_poster_card"
             app:layout_constraintTop_toBottomOf="@+id/movie_poster_card" />
@@ -153,6 +143,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/icn_like_gray_16px"
             app:layout_constraintBottom_toTopOf="@id/movie_overview"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:foreground="?android:attr/selectableItemBackground"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

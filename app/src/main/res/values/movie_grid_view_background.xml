@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="movie_grid_view_background">#2E3147</color>
+    <color name="movie_grid_view_background">#FFDE03</color>
 </resources>
